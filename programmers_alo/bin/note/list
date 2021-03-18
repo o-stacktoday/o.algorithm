@@ -1,0 +1,28 @@
+
+리스트에 담긴 데이터 읽는 방법
+ArrayList<String> list = new ArrayList<String>();
+list.add("사과");
+list.add("바나나");
+list.add("포도");
+list.add("파인애플");
+list.add("복숭아");
+
+
+1. for 문
+for( int i =0; i<list.length; i++){
+	출력문( list.get(i) );
+}
+
+2. for-each문(향상된 for문)
+	for( String str : list ){
+	출력문( str );
+
+	}
+
+
+3. Iterator 반복자
+Iterator<String> iter = list.iterator();
+while(iter.hasNext()){ 
+	System.out.println(iter.next());
+}
+
